@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+
+    <Product>fscalc</Product>
+    <Description>simple calculator written in F#</Description>
+    <VersionPrefix>1.0.0</VersionPrefix>
+
+    <Copyright>Apache 2</Copyright>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageLicenseUrl>https://github.com/cannorin/FsCalc/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/cannorin/FsCalc</PackageProjectUrl>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    
+    <IsPackable>true</IsPackable>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>fscalc</ToolCommandName>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Lexer.fs" />
+    <Compile Include="Parser.fs" />
+    <Compile Include="Eval.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+</Project>
